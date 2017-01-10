@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  * Created by isaevpd-kde on 12/6/16.
@@ -17,10 +16,14 @@ public class Race {
     private Long id;
     private String name;
     private Date date;
-    // maps driver id to score:
-    private HashMap<Integer, Integer> drivers;
 
     protected Race() {
+    }
+
+    public Race(String name, Date date) {
+        super();
+        this.name = name;
+        this.date = date;
     }
 
     public Long getId() {

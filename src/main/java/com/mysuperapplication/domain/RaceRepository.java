@@ -10,5 +10,5 @@ import java.util.List;
 
 
 public interface RaceRepository extends CrudRepository<Race, Long> {
-    List<Race> findByName(String name);
+//    List<Race> findByName(String name);
 }

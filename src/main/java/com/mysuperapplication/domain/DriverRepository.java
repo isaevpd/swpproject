@@ -10,5 +10,5 @@ import java.util.List;
  */
 
 public interface DriverRepository extends CrudRepository<Driver, Long> {
-    List<Driver> findByFirstName(@Param("name") String firstName);
+//    List<Driver> findByFirstName(@Param("name") String firstName);
 }

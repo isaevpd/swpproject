@@ -18,8 +18,13 @@ public class Team {
 
     protected Team() {}
 
-    public long getId() {
-        return this.id;
+    public Team(String name, String car) {
+        super();
+        this.name = name;
+        this.car = car;
+    }
+    public Long getId() {
+        return id;
     }
 
     public String getName() {
@@ -36,5 +41,14 @@ public class Team {
 
     public void setCar(String car) {
         this.car = car;
+    }
+
+    public String toString() {
+        return String.format(
+                "Team %d: name: %s, car: %s.",
+                id,
+                name,
+                car
+        );
     }
 }
